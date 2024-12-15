@@ -1,10 +1,11 @@
-package services;
+package com.back.Emprestimo.services;
 
 import java.util.ArrayList;
 import org.springframework.stereotype.Service;
-import core.Client;
-import core.Loan;
-import core.LoanResponse;
+
+import com.back.Emprestimo.core.Client;
+import com.back.Emprestimo.core.Loan;
+import com.back.Emprestimo.core.LoanResponse;
 
 @Service
 public class LoanResponseService {
@@ -25,7 +26,6 @@ public class LoanResponseService {
 		// Conceder o empréstimo consignado se o salário do cliente for igual ou superior a R$ 5000.
 		if(client.getIncome() >= 5000)
 			loans.add(new Loan("CONSINGMENT", 2));
-		
 
 		return new LoanResponse(client.getName(), loans);
 	}
