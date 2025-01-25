@@ -1,12 +1,14 @@
-package com.back.Loans.core;
+package com.back.Loans.dto;
 
 import java.util.ArrayList;
 
-public class LoanResponse {
+import com.back.Loans.core.Loan;
+
+public class LoanDTO {
 	private String customer;
 	private ArrayList<Loan> loans;
 	
-	public LoanResponse(String customer, ArrayList<Loan> loans) {
+	public LoanDTO(String customer, ArrayList<Loan> loans) {
 		this.setCustomer(customer);
 		this.setLoans(loans);
 	}
