@@ -1,13 +1,13 @@
-package com.back.Emprestimo;
+package com.back.Loans;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EmprestimoApplication {
+public class LoansApplication {
 	
 	public static void main(String[] args) {
-		SpringApplication.run(EmprestimoApplication.class, args);
+		SpringApplication.run(LoansApplication.class, args);
 	}
 
 }

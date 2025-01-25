@@ -1,4 +1,4 @@
-package com.back.Emprestimo.control;
+package com.back.Loans.control;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -7,19 +7,15 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.back.Emprestimo.core.Client;
-import com.back.Emprestimo.core.LoanResponse;
-import com.back.Emprestimo.services.LoanResponseService;
+import com.back.Loans.core.Client;
+import com.back.Loans.core.LoanResponse;
+import com.back.Loans.services.LoanResponseService;
 
 @RestController
 @RequestMapping
 public class LoanController {
-	private LoanResponseService loanResponseService;
-	
 	@Autowired
-	public LoanController(LoanResponseService loanResponseService) {
-		this.loanResponseService = loanResponseService; 
-	}
+	private LoanResponseService loanResponseService;
 	
 	@PostMapping("/customer-loans")
 	public ResponseEntity<LoanResponse> loanResponse(@RequestBody Client client) {

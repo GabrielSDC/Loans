@@ -1,4 +1,4 @@
-package com.back.Emprestimo.core;
+package com.back.Loans.core;
 
 public class Client {
 	private String name;

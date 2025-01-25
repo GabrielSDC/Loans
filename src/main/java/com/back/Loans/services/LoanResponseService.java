@@ -1,11 +1,11 @@
-package com.back.Emprestimo.services;
+package com.back.Loans.services;
 
 import java.util.ArrayList;
 import org.springframework.stereotype.Service;
 
-import com.back.Emprestimo.core.Client;
-import com.back.Emprestimo.core.Loan;
-import com.back.Emprestimo.core.LoanResponse;
+import com.back.Loans.core.Client;
+import com.back.Loans.core.Loan;
+import com.back.Loans.core.LoanResponse;
 
 @Service
 public class LoanResponseService {

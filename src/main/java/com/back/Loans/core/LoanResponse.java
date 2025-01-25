@@ -1,4 +1,4 @@
-package com.back.Emprestimo.core;
+package com.back.Loans.core;
 
 import java.util.ArrayList;
 
